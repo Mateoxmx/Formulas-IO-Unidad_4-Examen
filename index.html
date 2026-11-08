@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#334e3d">
+  <meta name="description" content="Formulario para examen de teoría de inventarios. Fórmulas con sus nombres y nomenclatura.">
+  <title>Teoría de inventarios · Formulario para examen</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23334e3d'/%3E%3Cpath d='M14 43V20l15 23V20l15 23V20' fill='none' stroke='%23e5edcd' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script defer src="app.js?v=2"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al formulario</a>
+  <aside class="sidebar">
+    <a class="brand" href="#inicio"><span class="brand-mark">∑</span><span>Formulario de examen<small>INVESTIGACIÓN DE OPERACIONES</small></span></a>
+    <div class="nav-heading">UNIDAD 4</div>
+    <nav aria-label="Temas del formulario">
+      <a class="nav-item active" href="#inicio" data-target="inicio"><span class="nav-symbol">⊞</span>Formulario completo</a>
+      <a class="nav-item" href="#sin-deficit" data-target="sin-deficit"><span class="topic-number">4.2.1</span><span>Sin déficit<small>Modelo EOQ básico</small></span></a>
+      <a class="nav-item" href="#descuentos" data-target="descuentos"><span class="topic-number">4.2</span><span>Con descuentos<small>Precios por cantidad</small></span></a>
+      <a class="nav-item" href="#con-deficit" data-target="con-deficit"><span class="topic-number">4.2.2</span><span>Con déficit<small>Faltantes planeados</small></span></a>
+      <a class="nav-item" href="#produccion" data-target="produccion"><span class="topic-number">4.3</span><span>Producción<small>Modelo de corrida</small></span></a>
+    </nav>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <span class="breadcrumb">Unidad 4 <span>/</span> Formulario para examen</span>
+      <div class="tools"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Buscar fórmula…" aria-label="Buscar fórmula o concepto"></label><button id="print" class="print-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V8h16v9h-3M7 14h10v7H7z"/></svg><span>Imprimir</span></button></div>
+    </header>
+    <main id="main">
+      <section id="inicio" class="intro">
+        <p class="eyebrow">INVESTIGACIÓN DE OPERACIONES · UNIDAD 4</p>
+        <h1>Teoría de <em>inventarios.</em></h1>
+        <p class="exam-label">Formulario para examen</p>
+      </section>
+      <div id="search-status" role="status" hidden></div>
+      <div id="topics"></div>
+      <div id="empty" hidden><h2>No encontramos esa fórmula.</h2><p>Prueba con “costo”, “faltante”, “Q” o “producción”.</p><button id="clear-search">Ver todas las fórmulas</button></div>
+      <footer><span>Investigación de Operaciones · Formulario para examen</span><a href="#inicio">Volver arriba ↑</a></footer>
+    </main>
+  </div>
+  <div id="toast" role="status"></div>
+</body>
+</html>
